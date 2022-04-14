@@ -1,7 +1,7 @@
+This script is free software
+
+
 I am requierd to list licenses of all used packages.
-This script is free for public use
-
-
 
 ========================================================
 Copyright (c) 2009-2016 Aditya Panchal and dicompyler-core contributors
