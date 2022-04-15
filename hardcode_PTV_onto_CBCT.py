@@ -21,7 +21,7 @@ def REFIZO(corrC):
     #corrC is array of x,y,z cooridnates of a structure (of each of its points)
     gama2=[]
     for ii in corrC:
-        c0=ii[0]-Jizo[0]-shift6apr[0] #I guess (-) sign shoud be her :-)
+        c0=ii[0]-Jizo[0]-shift6apr[0] #I guess (-) sign shoud be her :-) #this works for me, 'cause that's how I define shift:= pos_Treat-pos_CBCT
         c1=ii[1]-Jizo[1]-shift6apr[1]
         c2=ii[2]
         gama2.append([type_org(c0),type_org(c1),type_org(c2)])
