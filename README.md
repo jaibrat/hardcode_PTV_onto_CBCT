@@ -7,10 +7,12 @@ Installing
 ==========
 1. Install Anaconda (recommended, not necessary)
 2. create environment  ```bash
-conda create --name myenv python=3.8 --no-default-packages
-```
+conda create --name myenv python --no-default-packages```
 4. install requierd packages ```bash
-
+pip install dicompyler-core
+dicompyler                         0.5.0
+dicompyler-core                    0.5.6
+```
 
 
 Using (preparing CBCTs)
