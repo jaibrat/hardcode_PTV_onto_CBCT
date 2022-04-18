@@ -1,6 +1,7 @@
 hardcode_PTV_onto_CBCT
 ============
 This python script is used to hardcode contour data onto CBCT_Pixel_data_image (img)
+
 Quick-Start Use:
 ============
 1. prepare CBCT.dcm in an "in-folder" (DICOM)
@@ -44,8 +45,10 @@ c. constructor
 	#wx.Panel.__init__(self)
         pass    
 ```
-it's either that or installing suited wx version (to me, much harder job)
+It's either that or installing suited wx version (to me, much harder job)
 (third option is to copy-paste (rewrite) function that is being called
 We just want to use one of class'es methods.
 
+
+Good luck!
 
