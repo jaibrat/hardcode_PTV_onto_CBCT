@@ -1,6 +1,8 @@
-hardcode_PTV_onto_CBCT
+hardcode_PTV_onto_CBCT.py
 ============
 This python script is used to hardcode contour data onto CBCT_Pixel_data_image (img)
+
+Motivated by slow software for off_line review (in radiotherapy) we developed a script that enables faster CBCT review
 
 Quick-Start Use:
 ============
@@ -25,10 +27,13 @@ git clone https://github.com/bastula/dicompyler.git
 #dicompyler-core                    0.5.6
 ```
 **Now, here comes an important part:**
-comment out every "wx"_involvemnt
+
+Comment out every "wx"_involvemnt!
+
 #and any other modules that might not be needed
 #from matplotlib ...
 Like this:
+
 a. imports
 ```
 #...
@@ -51,4 +56,3 @@ We just want to use one of class'es methods.
 
 
 Good luck!
-
