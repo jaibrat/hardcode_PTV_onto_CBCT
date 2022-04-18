@@ -1,16 +1,17 @@
 hardcode_PTV_onto_CBCT.py
 ============
-This python script is used to hardcode contour data onto CBCT_Pixel_data_image (img)
+This python script is used to hardcode contour data onto CBCT_Pixel_data_image (img).
 
-Motivated by slow software for off_line review (in radiotherapy) we developed a script that enables faster CBCT review
+Motivated by slow software for off_line review (in radiotherapy) we developed a script that enables faster CBCT review.
+
+<img src='https://raw.githubusercontent.com/jaibrat/hardcode_PTV_onto_CBCT/main/demo-imge.PNG' align='right' height='440' width='287' alt="idea in short">
 
 Quick-Start Use:
 ============
 1. prepare CBCT.dcm in an "in-folder" (DICOM)
 2. set all parameter values in a script (ISO-coordinates, setup-shift, filenames, and desired contour nubers)
-3. run the script and as a result you have your "out-folder" filled 
-
-<img src='https://raw.githubusercontent.com/jaibrat/hardcode_PTV_onto_CBCT/main/demo-imge.PNG' align='right' height='440' width='287' alt="idea in short">
+3. run the script and as a result you have your "out-folder" filled
+4. send those images to any DICOM-viewer (or PACS), contours should be visible
 
 Installing
 ==========
@@ -51,8 +52,9 @@ c. constructor
         pass    
 ```
 It's either that or installing suited wx version (to me, much harder job)
-(third option is to copy-paste (rewrite) function that is being called
+(third option is to copy-paste (rewrite) function that is being called)
 We just want to use one of class'es methods.
 
 
 Good luck!
+
