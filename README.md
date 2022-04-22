@@ -55,6 +55,12 @@ It's either that or installing suited wx version (to me, much harder job)
 (third option is to copy-paste (rewrite) function that is being called)
 We just want to use one of class'es methods.
 
+**Now, here comes an important part (#2):**
+
+```wget -L https://github.com/dicompyler/dicompyler-core/raw/master/dicompylercore/dicomparser.py -O /home/ubuntu2/anaconda3/envs/dipy6/lib/python3.10/site-packages/dicompylercore/dicomparser056.py ```
+
+Which is linux command that copies dicompyler-core ver_0.5.6 inside its folder (you can do that manually), ```pip install dicompyler-core==0.5.6``` won't work, cause' it goes only up to ver_0.5.5
+
 
 Good luck!
 
