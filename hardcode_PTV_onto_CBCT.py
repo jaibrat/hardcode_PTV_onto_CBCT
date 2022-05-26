@@ -3,7 +3,7 @@
 Created on Sat Apr  2 18:50:57 2022
 
 @author: Lovro
-version 0.0.2
+version 0.0.3
 """
 import numpy as np
 import importlib.util
@@ -23,7 +23,7 @@ def REFIZO(corrC):
     gama2=[]
     for ii in corrC:
         c0=ii[0]-Jizo[0]-shift6apr[0] #see "Some explanation"
-        c1=ii[1]-Jizo[1]-shift6apr[1]
+        c1=ii[1]-Jizo[1]+shift6apr[1] #(+,-) convention is used for script that takes couch coord. from Mosaiq
         c2=ii[2] #Z-direction (longitudinal) is transformed in "find postition" part
         gama2.append([type_org(c0),type_org(c1),type_org(c2)])
         #return shifted array (& preserve object-type)
@@ -83,7 +83,7 @@ for filename in glob.iglob(in_folder+'**/*.dcm',recursive=True):
     # izoXiO=dp02['0x00200032'] #CT #this is redundant
     #some arithmetics is needet to calculate according slice Z-position
     # pomakREFIZO=Jizo[2]  #redundant
-    p_float=float(izoCBCT[2])+Jizo[2]-shift6apr[2]
+    p_float=float(izoCBCT[2])+Jizo[2]+shift6apr[2]
     #applied couch shift has opposite direct. of IZO-movement (see "Some explanation")
     position=str(p_float )
     print("slice_position mm: ", position) #now we have it
