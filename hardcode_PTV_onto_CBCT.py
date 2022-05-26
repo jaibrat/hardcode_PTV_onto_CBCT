@@ -92,6 +92,7 @@ for filename in glob.iglob(in_folder+'**/*.dcm',recursive=True):
     # couch_shift=def= Couch_coord_new - Couch_coord_old
     # couch_coord system: e.g.: (+)-direction means couch is going up
     #    notice: that is opposite of (Head_First_Supine) DICOM coord sys
+    #    (with exception of table-vertical)
     #DICOM coord systemm (axes, and direction) can be seen: google: "DICOM coord."
     # the function "REFIZO" that converts coordinate of StructureSet
     #     takes Coordinates, and subtracts IZO-coord from them
